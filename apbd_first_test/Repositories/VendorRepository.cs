@@ -129,7 +129,6 @@ public class VendorRepository : IVendorRepository
             return CreateVendorResult.VendorAlreadyExists;
         }
 
-        // FUNCTION: check all requested products before starting insert transaction.
         var productIds = new HashSet<int>();
 
         foreach (var product in dto.Products)
